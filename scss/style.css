@@ -1,0 +1,419 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply font-sans bg-gray-950 text-white relative;
+}
+
+.my_container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+input {
+  @apply w-full border border-gray-300 rounded px-4 py-3;
+}
+
+.site_overlay {
+  @apply absolute left-0 top-0 z-[-1];
+}
+
+.flex_left {
+  @apply flex flex-wrap items-center;
+}
+
+.flex_between {
+  @apply flex justify-between items-center flex-wrap;
+}
+
+.flex_center {
+  @apply flex justify-center items-center flex-wrap;
+}
+
+.flex_end {
+  @apply flex justify-end items-center flex-wrap;
+}
+
+.viewers {
+  @apply text-xs text-gray-500 font-semibold flex items-center space-x-1.5;
+}
+
+.genre_item {
+  @apply border-b border-gray-500 hover:text-amber-500;
+}
+
+.grid_list_2 {
+  @apply grid grid-cols-2 gap-2;
+}
+
+.grid_list_4 {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3;
+}
+
+.grid_list_5 {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2;
+}
+
+.banner {
+  @apply px-0 lg:px-4 mt-4;
+}
+
+.banner_wrapper {
+  @apply py-10 text-center;
+}
+
+.banner_title {
+  @apply text-2xl;
+}
+
+.breadcrumb {
+  @apply text-xs text-gray-400 -mx-2;
+}
+
+.breadcrumb a {
+  @apply p-2 hover:text-amber-500 transition-all;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+.btn_primary {
+  @apply px-8 py-2 bg-amber-500 rounded-md text-sm hover:bg-amber-600 text-black transition-all hover:px-10;
+}
+
+.btn_outline {
+  @apply border border-gray-500 hover:border-amber-500 rounded-full px-4 py-1 text-gray-400 hover:text-amber-500;
+}
+
+.card {
+  @apply border border-gray-600 p-4 rounded;
+}
+
+.card_title {
+  @apply text-lg font-semibold;
+}
+
+.manga {
+  @apply overflow-hidden relative block transition-all;
+}
+
+.manga img,
+.chapter_content img {
+  @apply w-full;
+}
+
+.manga .manga_content {
+  @apply absolute inset-x-0 bottom-0 h-28;
+  @apply bg-gradient-to-t from-gray-950/95 via-gray-950/80 to-transparent;
+  @apply px-3 pt-14 transition-all;
+}
+
+.manga:hover .manga_content {
+  @apply h-32;
+}
+
+.manga_content > div {
+  @apply text-ellipsis overflow-hidden whitespace-nowrap;
+}
+
+.manga_content .description {
+  @apply text-xs text-gray-400;
+}
+
+.manga_chapters {
+  @apply border-t border-gray-600 px-2 py-3;
+}
+
+.manga_chapters_list {
+  @apply text-xs text-gray-400 pt-1;
+}
+
+.manga_chapters_item {
+  @apply block hover:text-gray-200 text-ellipsis overflow-hidden whitespace-nowrap py-0.5;
+}
+
+.footer {
+  @apply bg-gray-900 text-gray-200 text-sm mt-20;
+}
+
+.listing {
+  @apply bg-gradient-to-b from-red-900 to-gray-950 py-3;
+}
+
+.listing_item {
+  @apply flex items-center p-2 mt-2 relative hover:bg-gradient-to-r from-gray-950/30 to-transparent transition-all;
+}
+
+.listing_item:hover .title {
+  @apply text-amber-500;
+}
+
+.listing_item .description {
+  @apply text-xs mt-1 text-gray-400 text-ellipsis overflow-hidden whitespace-nowrap;
+}
+
+.listing_item .views {
+  @apply flex items-center text-xs mt-2;
+}
+
+.listing_item_img {
+  @apply relative w-20;
+}
+
+.listing_item_numb {
+  @apply absolute w-8 h-8 border border-gray-500;
+  @apply bg-gray-900 rounded-full -top-4 left-1/2 -translate-x-1/2;
+  @apply flex justify-center items-center;
+}
+
+.modal {
+  @apply fixed inset-0 z-50 opacity-0 invisible top-0 -translate-y-full transition-all;
+}
+
+.modal.show {
+  @apply opacity-100 visible translate-y-0;
+}
+
+.modal .overlay {
+  @apply absolute inset-0 bg-gray-900/20 backdrop-blur transition-all;
+}
+
+.modal .modal_content {
+  @apply relative px-6 py-12 bg-white;
+}
+
+/* Navbar */
+.navbar_logo {
+  @apply w-1/2 lg:w-1/5;
+}
+
+.navbar_menu {
+  @apply flex-1 hidden lg:flex justify-center text-sm tracking-tight uppercase;
+}
+
+.navbar_menu_item {
+  @apply border-y-2 border-transparent hover:border-b-gray-200 px-4 py-8;
+}
+
+.navbar_right {
+  @apply w-1/2 lg:w-1/5 flex justify-end;
+}
+
+.navbar_bot {
+  @apply border-t border-gray-500 text-xs font-light text-gray-400 flex_left;
+}
+
+.navbar_bot a {
+  @apply block pr-6 py-2;
+}
+
+/* End Navbar */
+/* Navbar mobile */
+.navbar_mobile {
+  @apply fixed z-40 inset-0 overflow-hidden invisible opacity-0;
+}
+
+.navbar_mobile.show {
+  @apply visible opacity-100;
+}
+
+.navbar_mobile .overlay {
+  @apply fixed inset-0 bg-gray-900/20 transition-all backdrop-blur;
+}
+
+.navbar_mobile .close {
+  @apply absolute right-2 top-8 p-2 z-10;
+}
+
+.navbar_mobile .navbar_mobile_menu {
+  @apply w-80 bg-gray-900 fixed right-0 inset-y-0 px-6 py-4 opacity-0 invisible translate-x-full transition-all uppercase;
+}
+
+.navbar_mobile .navbar_mobile_menu.show {
+  @apply visible opacity-100 translate-x-0;
+}
+
+.navbar_mobile .nav_item {
+  @apply py-2 flex items-center;
+}
+
+/* End Navbar mobile */
+.pagination {
+  @apply text-center mt-4 flex flex-wrap justify-center;
+}
+
+.pagination li a {
+  @apply flex_center;
+  @apply border border-gray-400 hover:border-amber-500;
+  @apply w-10 h-10 text-sm text-gray-400 hover:text-amber-500;
+}
+
+section {
+  @apply my_container;
+}
+
+.section_head {
+  @apply flex_between border-b border-gray-600 pb-4;
+}
+
+.section_head_1 {
+  @apply p-4 bg-gradient-to-r from-red-900 to-gray-950 font-semibold;
+}
+
+.section_head_2 {
+  @apply bg-gradient-to-r from-red-700 from-20% to-red-900;
+  @apply px-3 py-6;
+  @apply flex items-center relative;
+}
+
+.section_head_2 .btn_primary {
+  @apply absolute right-0 top-1/2 -translate-y-1/2;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.section_title {
+  @apply text-lg font-semibold uppercase tracking-widest;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply top-0 bottom-0 h-full mt-0 w-8 transition-all text-white;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-2xl lg:text-3xl;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  @apply opacity-40 cursor-auto pointer-events-none;
+}
+
+.swiper-button-next {
+  @apply right-0 bg-gradient-to-l;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  @apply w-12;
+}
+
+.swiper-button-prev {
+  @apply left-0 bg-gradient-to-r;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply from-gray-900/70 to-transparent;
+}
+
+.text_description {
+  @apply text-gray-400 hover:text-gray-200 transition-all underline text-xs;
+}
+
+.heading_1 {
+  @apply font-semibold text-gray-400 mt-6 lg:mt-12 text-lg lg:text-xl tracking-widest border-b border-gray-500 pb-4;
+  @apply flex items-center space-x-2;
+}
+
+.chapter_head {
+  @apply py-4 lg:py-8 text-center space-y-2;
+}
+
+.chapter_head_title {
+  @apply text-lg lg:text-xl text-gray-200 pb-2;
+}
+
+.chapter_head_server a {
+  @apply px-4 py-1.5 rounded border border-gray-600;
+}
+
+.chapter_head_server a.active {
+  @apply bg-amber-600;
+}
+
+.chapter_nav {
+  @apply flex_center space-x-3 pt-2;
+}
+
+.chapter_nav_btn {
+  @apply w-10 h-10 flex_center bg-red-600 rounded;
+}
+
+.chapter_nav_select {
+  @apply text-gray-900 h-10 rounded px-3 max-w-60 w-full bg-gray-100;
+}
+
+.chapter_content {
+  @apply max-w-5xl mx-auto space-y-2;
+}
+
+.details {
+  @apply lg:flex lg:flex-wrap mt-4;
+}
+
+.details_l {
+  @apply w-full lg:w-1/3 lg:pr-4;
+}
+
+.details_r {
+  @apply w-full lg:w-2/3;
+}
+
+.details_head {
+  @apply bg-gradient-to-r from-red-950 to-gray-950 p-4;
+}
+
+.details_name {
+  @apply text-lg lg:text-2xl font-semibold;
+}
+
+.details_author {
+  @apply text-sm text-gray-300 font-thin;
+}
+
+.details_info {
+  @apply flex flex-wrap mt-2;
+}
+
+.details_info_title {
+  @apply w-32 flex items-center text-gray-400 space-x-2;
+}
+
+.details_info a {
+  @apply text-amber-500 hover:underline;
+}
+
+.chapterList {
+  @apply max-h-80 relative overflow-hidden border border-gray-500 p-2 text-sm text-gray-400;
+}
+
+.chapterList .showMore {
+  @apply absolute bottom-0 inset-x-0 h-14;
+  @apply hover:h-20 transition-all flex justify-center items-center;
+  @apply bg-gradient-to-t from-gray-700/90 to-transparent pt-6;
+}
+
+.chapterList_item {
+  @apply flex flex-wrap items-center p-2 border-b last:border-0 border-dashed border-gray-500;
+}
+
+.chapterList_number {
+  @apply w-5/12 text-white group-hover:text-amber-500;
+}
+
+.chapterList_item:hover .chapterList_number {
+  @apply text-amber-500;
+}
+
+.chapterList_date {
+  @apply w-4/12 text-center;
+}
+
+.chapterList_views {
+  @apply flex_end w-3/12;
+}
+
+/*# sourceMappingURL=style.css.map */

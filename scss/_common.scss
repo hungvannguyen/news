@@ -1,0 +1,39 @@
+body {
+  @apply font-sans bg-gray-950 text-white relative
+}
+.my_container {
+  @apply max-w-7xl mx-auto px-4
+}
+input {
+  @apply w-full border border-gray-300 rounded px-4 py-3;
+}
+.site_overlay {
+  @apply absolute left-0 top-0 z-[-1]
+}
+.flex_left {
+  @apply flex flex-wrap items-center
+}
+.flex_between {
+  @apply flex justify-between items-center flex-wrap
+}
+.flex_center {
+  @apply flex justify-center items-center flex-wrap
+}
+.flex_end {
+  @apply flex justify-end items-center flex-wrap
+}
+.viewers {
+  @apply text-xs text-gray-500 font-semibold flex items-center space-x-1.5
+}
+.genre_item {
+  @apply border-b border-gray-500 hover:text-amber-500
+}
+.grid_list_2 {
+  @apply grid grid-cols-2 gap-2
+}
+.grid_list_4 {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3
+}
+.grid_list_5 {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2
+}

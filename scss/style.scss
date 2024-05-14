@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'common';
+@import 'variables';
+
+@import "components/all";
+@import "pages/all";
