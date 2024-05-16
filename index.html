@@ -74,20 +74,20 @@
 <!-- END HEADER -->
 
 <!-- CONTENT -->
-<section>
-	<div class="my_container mb-4">
+<section class="mt-16">
+	<div class="my_container mb-4 mx-auto">
 		<div class="grid md:grid-cols-2 gap-4">
-			<div class="flex-col space-y-2">
-				<img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="1" class="bg-amber-400 w-full h-[500px]">
-				<span class="my-2 text-sm">Tag</span>
+			<div class="flex-col space-y-2 overflow-hidden">
+				<img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="1" class="bg-amber-400 h-auto">
+				<span class="my-2 text-sm text-gray-500">Tag</span>
 				<h2 class="font-bold max-w-fit truncate">Advances in Predicting and Monitoring Atmospheric Conditions.</h2>
 				<p class="max-w-fit">In the dynamic world of business and entrepreneurship, success is not just about having a great idea or a solid business plan. It requires a combination of factors, including setting goals,...</p>
 			</div>
 			<div>
 				<div x-data="{ tab: 'latest' }">
 					<div class="flex border-b font-bold">
-						<button :class="{ 'border-b-2 border-blue-500 text-blue-500': tab === 'latest' }" class="px-4 py-2" @click="tab = 'latest'">LATEST</button>
-						<button :class="{ 'border-b-2 border-blue-500 text-blue-500': tab === 'recommended' }" class="px-4 py-2" @click="tab = 'recommended'">RECOMMENDED</button>
+						<button :class="{ 'border-b-2 border-blue-500 text-blue-500': tab === 'latest' }" class="px-4 py-2 text-xl" @click="tab = 'latest'">LATEST</button>
+						<button :class="{ 'border-b-2 border-blue-500 text-blue-500': tab === 'recommended' }" class="px-4 py-2 text-xl" @click="tab = 'recommended'">RECOMMENDED</button>
 					</div>
 
 					<div x-show="tab === 'latest'" class="p-4">
@@ -166,7 +166,73 @@
 					<div x-show="tab === 'recommended'" class="p-4">
 						<!-- Đặt nội dung của tab RECOMMENDED ở đây -->
 						<div class="space-y-4">
+							<div class="md:flex space-x-4 lg:max-h-[100px]">
+								<div class="md:h-24 md:w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+									<img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="h-full w-full object-cover object-center">
+								</div>
 
+								<div class="ml-4 flex flex-1 flex-col">
+									<div>
+										<p class="mt-1 text-sm text-gray-500">Tag</p>
+										<div class="flex justify-between text-base font-medium">
+											<h3>
+												<a href="#">Throwback Hip Bag. Advances in Predicting and Monitoring Atmospheric Conditions.</a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="md:flex space-x-4 lg:max-h-[100px]">
+								<div class="md:h-24 md:w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+									<img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="h-full w-full object-cover object-center">
+								</div>
+
+								<div class="ml-4 flex flex-1 flex-col">
+									<div>
+										<p class="mt-1 text-sm text-gray-500">Tag</p>
+										<div class="flex justify-between text-base font-medium">
+											<h3>
+												<a href="#">Throwback Hip Bag. Advances in Predicting and Monitoring Atmospheric Conditions.</a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="md:flex space-x-4 lg:max-h-[100px]">
+								<div class="md:h-24 md:w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+									<img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="h-full w-full object-cover object-center">
+								</div>
+
+								<div class="ml-4 flex flex-1 flex-col">
+									<div>
+										<p class="mt-1 text-sm text-gray-500">Tag</p>
+										<div class="flex justify-between text-base font-medium">
+											<h3>
+												<a href="#">Throwback Hip Bag. Advances in Predicting and Monitoring Atmospheric Conditions.</a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="md:flex space-x-4 lg:max-h-[100px]">
+								<div class="md:h-24 md:w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
+									<img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="h-full w-full object-cover object-center">
+								</div>
+
+								<div class="ml-4 flex flex-1 flex-col">
+									<div>
+										<p class="mt-1 text-sm text-gray-500">Tag</p>
+										<div class="flex justify-between text-base font-medium">
+											<h3>
+												<a href="#">Throwback Hip Bag. Advances in Predicting and Monitoring Atmospheric Conditions.</a>
+											</h3>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -192,7 +258,7 @@
 									<path d="M53.527,192.864c-2.187,3.518-1.109,8.142,2.409,10.329l183.478,114.081c1.232,0.767,2.601,1.132,3.953,1.132 c2.506,0,4.956-1.256,6.376-3.541c2.187-3.518,1.109-8.142-2.409-10.329L63.856,190.455 C60.338,188.266,55.714,189.346,53.527,192.864z"> </path>
                 </g>
             </svg>
-				<a href="#" class="font-semibold inline-block">Local News</a>
+				<a href="#" class="font-bold inline-block text-2xl">Local News</a>
 			</div>
 			<a href="#">See All</a>
 		</div>
@@ -221,7 +287,7 @@
 				</div>
 				<div class="flex flex-col mb-auto">
 					<a href="#"
-									class="font-medium text-xs inline-block hover:text-indigo-600 transition duration-500 ease-in-out">Tag</a>
+									class="font-medium text-gray-500 text-xs inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-2">Tag</a>
 					<a href="#"
 									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">Simplest
 						Salad Recipe ever</a>
@@ -245,7 +311,9 @@
 						</div>
 					</a>
 					</div>
-					<div class="px-6 py-4 mb-auto">
+					<div class="py-4 mb-auto">
+						<a href="#"
+										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
 						<a href="#"
 										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
 							FastFood Ideas (Yummy)</a>
@@ -261,76 +329,89 @@
 					<a href="#"></a>
 					<div class="relative"><a href="#">
 						<img class="w-full"
-										src="https://images.pexels.com/photos/6086/food-salad-healthy-vegetables.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+										src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
 										alt="Sunset in the mountains">
 						<div
 										class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
 						</div>
 					</a>
 					</div>
-					<div class="px-6 py-4 mb-auto">
+					<div class="py-4 mb-auto">
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
-							to eat salad?</a>
+										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+						<a href="#"
+										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
+							FastFood Ideas (Yummy)</a>
 						<p class="text-gray-500 text-sm">
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
+
 				</div>
 
 				<!-- CARD 4 -->
 				<div class="rounded overflow-hidden shadow-lg flex flex-col">
 					<a href="#"></a>
-					<div class="px-6 py-4 mb-auto">
+					<div class="py-4 mb-auto">
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
-							to eat salad?</a>
+										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+						<a href="#"
+										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
+							FastFood Ideas (Yummy)</a>
 						<p class="text-gray-500 text-sm">
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
+
 				</div>
 
 				<!-- CARD 5 -->
 				<div class="rounded overflow-hidden shadow-lg flex flex-col">
 					<a href="#"></a>
-
-					<div class="px-6 py-4 mb-auto">
+					<div class="py-4 mb-auto">
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
-							to eat salad?</a>
+										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+						<a href="#"
+										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
+							FastFood Ideas (Yummy)</a>
 						<p class="text-gray-500 text-sm">
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
+
 				</div>
 
 				<!-- CARD 6 -->
 				<div class="rounded overflow-hidden shadow-lg flex flex-col">
 					<a href="#"></a>
 
-					<div class="px-6 py-4 mb-auto">
+					<div class="py-4 mb-auto">
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
-							to eat salad?</a>
+										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+						<a href="#"
+										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
+							FastFood Ideas (Yummy)</a>
 						<p class="text-gray-500 text-sm">
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
+
 				</div>
 
 				<!-- CARD 7 -->
 				<div class="rounded overflow-hidden shadow-lg flex flex-col">
 					<a href="#"></a>
-
-					<div class="px-6 py-4 mb-auto">
+					<div class="py-4 mb-auto">
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
-							to eat salad?</a>
+										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+						<a href="#"
+										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
+							FastFood Ideas (Yummy)</a>
 						<p class="text-gray-500 text-sm">
 							Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 						</p>
 					</div>
+
 				</div>
 			</div>
 
@@ -387,7 +468,7 @@
 		</div>
 
 
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
 			<!-- CARD 1 -->
 			<div class="rounded overflow-hidden shadow-lg flex flex-col">
@@ -407,7 +488,9 @@
 					<!-- 					</div> -->
 					<!-- 				</a> -->
 				</div>
-				<div class="px-6 py-4 mb-auto">
+				<div class="flex flex-col py-4 mb-auto">
+					<a href="#"
+									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
 					<a href="#"
 									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Simplest
 						Salad Recipe ever</a>
@@ -432,7 +515,9 @@
 					</div>
 				</a>
 				</div>
-				<div class="px-6 py-4 mb-auto">
+				<div class="flex flex-col py-4 mb-auto">
+					<a href="#"
+									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
 					<a href="#"
 									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
 						FastFood Ideas (Yummy)</a>
@@ -442,7 +527,6 @@
 				</div>
 
 			</div>
-
 
 
 			<!-- CARD 3 -->
@@ -457,7 +541,33 @@
 					</div>
 				</a>
 				</div>
-				<div class="px-6 py-4 mb-auto">
+				<div class="flex flex-col py-4 mb-auto">
+					<a href="#"
+									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+					<a href="#"
+									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
+						to eat salad?</a>
+					<p class="text-gray-500 text-sm">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+					</p>
+				</div>
+			</div>
+
+			<!-- CARD 4 -->
+			<div class="rounded overflow-hidden shadow-lg flex flex-col">
+				<a href="#"></a>
+				<div class="relative"><a href="#">
+					<img class="w-full"
+									src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=500"
+									alt="Sunset in the mountains">
+					<div
+									class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+					</div>
+				</a>
+				</div>
+				<div class="flex flex-col py-4 mb-auto">
+					<a href="#"
+									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
 					<a href="#"
 									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
 						to eat salad?</a>
