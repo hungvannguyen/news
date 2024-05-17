@@ -9,69 +9,107 @@
 	<link href="/scss/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<!-- HEADER -->
+<!-- NAVBAR -->
 <header id="navbar" class="navbar">
 	<div class="my_container flex_between">
-		<a class="inline-block py-5" href="/">
-			<img src="/images/logo.png" title="logo" alt="logo" width="110" height="39">
-		</a>
+		<div class="navbar_logo">
+			<a class="inline-block py-5" href="/">
+				<img src="/images/logo.png" title="logo" alt="logo" width="110" height="39">
+			</a>
+		</div>
 
 		<nav class="navbar_menu">
 			<a
-							href="/"
-							title="Home"
-							aria-label="Home"
+							href="/category.html"
+							title="Local"
+							aria-label="Local"
 							class="navbar_menu_item"
 			>
 				Local
-
 			</a>
 			<a
-							href="/"
-							title="Ranking"
-							aria-label="Ranking"
+							href="/category.html"
+							title="Art"
+							aria-label="Art"
 							class="navbar_menu_item"
 			>
 				Art
 			</a>
 			<a
-							href="/manga-list.html"
-							title="Manga List"
-							aria-label="Manga List"
+							href="/category.html"
+							title="Weather"
+							aria-label="Weather"
 							class="navbar_menu_item"
 			>
 				Weather
 			</a>
 			<a
 							href="#"
-							title="Group"
-							aria-label="Group"
+							title="Food"
+							aria-label="Food"
 							class="navbar_menu_item"
 			>
 				Food
 			</a>
 			<a
-							href="/"
-							title="Fanpage"
-							aria-label="Fanpage"
+							href="/category.html"
+							title="Travel"
+							aria-label="Travel"
 							class="navbar_menu_item"
 			>
 				Travel
 			</a>
-			<a
-							href="/"
-							title="Fanpage"
-							aria-label="Fanpage"
-							class="navbar_menu_item"
-			>
-				More
-			</a>
-
 		</nav>
 
+		<div class="navbar_right">
+			<button class="modal_toggle py-7 px-2" data-modal="search-modal">
+				<svg width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.0392 15.6244C18.2714 14.084 19.0082 12.1301 19.0082 10.0041C19.0082 5.03127 14.9769 1 10.0041 1C5.03127 1 1 5.03127 1 10.0041C1 14.9769 5.03127 19.0082 10.0041 19.0082C12.1301 19.0082 14.084 18.2714 15.6244 17.0392L21.2921 22.707C21.6828 23.0977 22.3163 23.0977 22.707 22.707C23.0977 22.3163 23.0977 21.6828 22.707 21.2921L17.0392 15.6244ZM10.0041 17.0173C6.1308 17.0173 2.99087 13.8774 2.99087 10.0041C2.99087 6.1308 6.1308 2.99087 10.0041 2.99087C13.8774 2.99087 17.0173 6.1308 17.0173 10.0041C17.0173 13.8774 13.8774 17.0173 10.0041 17.0173Z" fill="currentColor"/></svg>
+			</button>
+
+			<button class="py-7 px-2 lg:hidden" data-toggle="mobile-menu">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</button>
+		</div>
 	</div>
 </header>
-<!-- END HEADER -->
+
+<!-- MENU MOBILE -->
+<div id="mobile-menu" class="navbar_mobile">
+	<div class="overlay" data-toggle="mobile-menu"></div>
+	<button class="close" data-toggle="mobile-menu">
+		<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#f0f0f0"/></svg>
+	</button>
+
+	<div id="mobile-menu-body" class="navbar_mobile_menu">
+		<div class="pb-6">
+			<a class="inline-block py-4" href="/">
+				<img src="/images/logo.png" title="logo" alt="logo" width="110" height="39">
+			</a>
+		</div>
+
+		<a href="/category.html" title="Local" aria-label="Local" class="nav_item">
+			<svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H12H19" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+			Local
+		</a>
+		<a href="/category.html" title="Art" aria-label="Art" class="text-white py-2 flex items-center">
+			<svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H12H19" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+			Art
+		</a>
+		<a href="/category.html" title="Weather" aria-label="Weather" class="text-white py-2 flex items-center">
+			<svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H12H19" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+			Weather
+		</a>
+		<a href="/category.html" title="Food" aria-label="Food" class="text-white py-2 flex items-center">
+			<svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H12H19" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+			Food
+		</a>
+		<a href="/category.html" title="Travel" aria-label="Travel" class="text-white py-2 flex items-center">
+			<svg class="mr-2" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H12H19" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+			Travel
+		</a>
+	</div>
+</div>
+<!-- END MENU MOBILE -->
 
 <!-- CONTENT -->
 <section>
@@ -620,5 +658,24 @@
 	</div>
 </footer>
 <!--End Footer-->
+
+<!-- SEARCH MODAL -->
+<div id="search-modal" class="modal">
+	<div class="overlay modal_toggle" data-modal="search-modal"></div>
+
+	<div class="modal_content">
+		<div class="relative max-w-3xl mx-auto text-black">
+			<input id="search-modal-input" name="search" placeholder="Search..." />
+
+			<label for="search-modal-input">
+				<svg class="absolute top-1/2 right-4 -translate-y-1/2" width="16" height="16" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.0392 15.6244C18.2714 14.084 19.0082 12.1301 19.0082 10.0041C19.0082 5.03127 14.9769 1 10.0041 1C5.03127 1 1 5.03127 1 10.0041C1 14.9769 5.03127 19.0082 10.0041 19.0082C12.1301 19.0082 14.084 18.2714 15.6244 17.0392L21.2921 22.707C21.6828 23.0977 22.3163 23.0977 22.707 22.707C23.0977 22.3163 23.0977 21.6828 22.707 21.2921L17.0392 15.6244ZM10.0041 17.0173C6.1308 17.0173 2.99087 13.8774 2.99087 10.0041C2.99087 6.1308 6.1308 2.99087 10.0041 2.99087C13.8774 2.99087 17.0173 6.1308 17.0173 10.0041C17.0173 13.8774 13.8774 17.0173 10.0041 17.0173Z" fill="#0F0F0F"/></svg>
+			</label>
+		</div>
+	</div>
+</div>
+<!-- END SEARCH MODAL -->
+
+<!-- JS -->
+<script src="./js/main.js"></script>
 </body>
 </html>
