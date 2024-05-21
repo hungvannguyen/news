@@ -21,7 +21,7 @@
 }
 
 .category-card {
-  @apply relative rounded-full overflow-hidden transition-all duration-300;
+  @apply relative overflow-hidden transition-all duration-300;
   &:hover {
     @apply -translate-y-1 scale-90;
   }

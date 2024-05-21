@@ -290,6 +290,37 @@ section {
   @apply mt-2 text-sm;
 }
 
+.newsletter-container {
+  @apply flex h-full justify-center items-center dark:bg-gray-800;
+}
+.newsletter-container .newsletter-content {
+  @apply flex p-6;
+}
+.newsletter-container .newsletter-content .newsletter-description {
+  @apply flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2;
+}
+.newsletter-container .newsletter-content .newsletter-description .newsletter-title {
+  @apply mb-2 text-2xl font-bold text-gray-700 dark:text-gray-200;
+}
+.newsletter-container .newsletter-content .newsletter-description .newsletter-text {
+  @apply text-gray-500 dark:text-gray-400;
+}
+.newsletter-container .newsletter-content .newsletter-form-container {
+  @apply w-full px-1 md:w-auto lg:w-1/2;
+}
+.newsletter-container .newsletter-content .newsletter-form-container .newsletter-form {
+  @apply block;
+}
+.newsletter-container .newsletter-content .newsletter-form-container .newsletter-form .input-container {
+  @apply flex flex-col sm:flex-row;
+}
+.newsletter-container .newsletter-content .newsletter-form-container .newsletter-form .input-container .email-input {
+  @apply flex-1 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500;
+}
+.newsletter-container .newsletter-content .newsletter-form-container .newsletter-form .input-container .submit-button {
+  @apply w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap dark:bg-gray-900;
+}
+
 .category-container {
   @apply flex justify-center gap-2 mt-6;
 }
@@ -315,7 +346,7 @@ section {
 }
 
 .category-card {
-  @apply relative rounded-full overflow-hidden transition-all duration-300;
+  @apply relative overflow-hidden transition-all duration-300;
 }
 .category-card:hover {
   @apply -translate-y-1 scale-90;
