@@ -1,0 +1,6 @@
+.image_animation {
+  @apply transition-all duration-150 ease-in-out;
+  &:hover {
+    @apply -translate-y-1 scale-90 duration-300;
+  }
+}

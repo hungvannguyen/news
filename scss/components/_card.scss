@@ -1,0 +1,29 @@
+.tag {
+  @apply font-medium text-gray-500 text-xs leading-4 transition-all duration-500 mt-2 mb-2;
+  &:hover {
+    @apply text-indigo-600;
+  }
+}
+
+.title {
+  @apply font-medium text-base leading-7 transition-all duration-500 mb-2;
+  &:hover {
+    @apply text-indigo-600;
+  }
+}
+
+.content {
+  @apply text-gray-500 text-sm leading-5;
+}
+
+.card_container {
+  @apply mt-10 grid gap-10 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2;
+}
+
+.card_container_2 {
+  @apply grid gap-10 sm:grid-cols-2 md:grid-cols-4;
+}
+
+.card_item {
+  @apply rounded-md overflow-hidden shadow-md flex flex-col;
+}

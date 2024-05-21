@@ -1,0 +1,12 @@
+.modal {
+  @apply fixed inset-0 z-50 opacity-0 invisible top-0 -translate-y-full transition-all
+}
+.modal.show {
+  @apply opacity-100 visible translate-y-0
+}
+.modal .overlay {
+  @apply absolute inset-0 bg-gray-900/20 backdrop-blur transition-all
+}
+.modal .modal_content {
+  @apply relative px-6 py-12 bg-white
+}

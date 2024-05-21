@@ -1,0 +1,44 @@
+/* Navbar */
+.navbar_logo {
+  @apply w-1/2 lg:w-1/5
+}
+.navbar_menu {
+  @apply flex-1 hidden lg:flex justify-center text-sm tracking-tight uppercase
+}
+.navbar_menu_item {
+  @apply border-y-2 border-transparent hover:border-b-gray-200 px-4 py-8
+}
+.navbar_right {
+  @apply w-1/2 lg:w-1/5 flex justify-end
+}
+.navbar_bot {
+  @apply border-t border-gray-500 text-xs font-light text-gray-400 flex_left
+}
+.navbar_bot a {
+  @apply block pr-6 py-2
+}
+/* End Navbar */
+
+/* Navbar mobile */
+.navbar_mobile {
+  @apply fixed z-40 inset-0 overflow-hidden invisible opacity-0
+}
+.navbar_mobile.show {
+  @apply visible opacity-100;
+}
+.navbar_mobile .overlay {
+  @apply fixed inset-0 bg-gray-900/20 transition-all backdrop-blur
+}
+.navbar_mobile .close {
+  @apply absolute right-2 top-8 p-2 z-10;
+}
+.navbar_mobile .navbar_mobile_menu {
+  @apply w-80 bg-gray-900 fixed right-0 inset-y-0 px-6 py-4 opacity-0 invisible translate-x-full transition-all uppercase
+}
+.navbar_mobile .navbar_mobile_menu.show {
+  @apply visible opacity-100 translate-x-0
+}
+.navbar_mobile .nav_item {
+  @apply py-2 flex items-center
+}
+/* End Navbar mobile */

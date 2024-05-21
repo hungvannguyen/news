@@ -126,17 +126,16 @@
 
 <!-- CONTENT -->
 <section class="mt-6" x-data>
-	<div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
-		<div class="flex flex-col space-y-4">
-			<a href="#"
-							class="font-medium text-gray-500 text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-			<span class="font-bold text-2xl lg:text-6xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2 overflow-e">Why to eat salad? Capturing the Majestic Power and Beauty of Nature’s Elements </span>
-			<span class="text-gray-500 text-sm">By <a href="#" class="text-indigo-600 hover:underline">John Doe</a> on
-				<span class="text-indigo-600">May 10, 2021</span></span>
+	<div class="post-head-container">
+		<div class="flex-container">
+			<a href="#" class="tag-link">Tag</a>
+			<span class="title-text">Why to eat salad? Capturing the Majestic Power and Beauty of Nature’s Elements </span>
+			<span class="author-info">By <a href="#" class="author-link">John Doe</a> on
+      <span class="date-text">May 10, 2021</span></span>
 		</div>
-		<div>
-			<img class="w-full"
-							src="https://images.pexels.com/photos/6086/food-salad-healthy-vegetables.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+		<div class="image-container">
+			<img class="full-width-image"
+							src="https://images.pexels.com/photos/6086/food-salad-healthy-vegetables.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 							alt="Sunset in the mountains">
 		</div>
 	</div>
@@ -200,16 +199,12 @@ In the dynamic world of business and entrepreneurship, success is not just about
 			</p>
 			</div>
 			<div class="my-4">
-				<div class="p-5 border rounded text-gray-500">
-					<div class="flex items-center">
-						<img class="w-16 h-16 rounded-full mr-3" src="https://loremflickr.com/320/320/girl" alt="jane">
-						<div class="text-sm">
-							<a href="#"
-											class="font-medium leading-none hover:text-indigo-600 transition duration-500 ease-in-out">
-								John doe
-							</a>
-							<p class="mt-2 text-sm">I am a passionate individual who finds solace and joy in curling up with a good book. As I journey through life, I continue to embrace my love for literature, creativity, and music. These passions define a significant part of who I am. With an unwavering curiosity and an open heart, I eagerly explore new adventures, seeking growth, knowledge, and meaningful experiences.
-							</p>
+				<div class="profile-container">
+					<div class="profile-content">
+						<img class="profile-image" src="https://loremflickr.com/320/320/girl" alt="jane">
+						<div class="profile-description">
+							<a href="#" class="profile-name">John doe</a>
+							<p class="profile-text">I am a passionate individual who finds solace and joy in curling up with a good book. As I journey through life, I continue to embrace my love for literature, creativity, and music. These passions define a significant part of who I am. With an unwavering curiosity and an open heart, I eagerly explore new adventures, seeking growth, knowledge, and meaningful experiences.</p>
 							<div class="flex mt-4">
 								<a href="/#" class="w-6 mx-1">
 									<svg class="fill-current cursor-pointer text-gray-500 hover:text-indigo-600" width="100%" height="100%"
@@ -311,63 +306,33 @@ In the dynamic world of business and entrepreneurship, success is not just about
 			</div>
 		</div>
 		<div>
-			<div class="sticky top-0">
-			<div class="border-2 p-8" x-scroll-to-header>
-				<h1 class="font-bold text-2xl mb-2">Table of contents</h1>
-				<ul class="space-y-2 list-decimal">
-					<li class="hover:text-indigo-600"><a x-on:click.prevent="$scrollTo({ el: '#setting-clear-goals', offsetHeader: true })" href="#setting-clear-goals">Setting Clear Goals</a></li>
-					<li class="hover:text-indigo-600"><a x-on:click.prevent="$scrollTo({ el: '#cultivating-the-right-mindset', offsetHeader: true })" href="#cultivating-the-right-mindset">Cultivating the Right Mindset</a></li>
-					<li class="hover:text-indigo-600"><a x-on:click.prevent="$scrollTo({ el: '#harnessing-unwavering-motivation', offsetHeader: true })" href="#harnessing-unwavering-motivation">Harnessing Unwavering Motivation</a></li>
-				</ul>
+			<div class="sidebar-container">
+				<div class="toc-container">
+					<h1 class="toc-title">Table of contents</h1>
+					<ul class="toc-list">
+						<li class="toc-item"><a href="#setting-clear-goals" class="toc-link">Setting Clear Goals</a></li>
+						<li class="toc-item"><a href="#cultivating-the-right-mindset" class="toc-link">Cultivating the Right Mindset</a></li>
+						<li class="toc-item"><a href="#harnessing-unwavering-motivation" class="toc-link">Harnessing Unwavering Motivation</a></li>
+					</ul>
+				</div>
+
+				<div class="related-posts-container">
+					<h1 class="related-posts-title">Related Posts</h1>
+					<div class="related-post">
+						<a href="/category.html" class="tag">Tag</a>
+						<a href="/post.html" class="title">Best FastFood Ideas (Yummy)</a>
+					</div>
+					<!-- Repeat the "related-post" div for each related post -->
+				</div>
 			</div>
 
-			<div>
-					<h1 class="font-bold text-2xl mb-2 border-b-2 mt-6">Related Posts</h1>
-				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
-						FastFood Ideas (Yummy)</a>
-					<div>
-			</div>
-		</div>
-				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
-						FastFood Ideas (Yummy)</a>
-					<div>
-					</div>
-				</div>
-				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
-						FastFood Ideas (Yummy)</a>
-					<div>
-					</div>
-				</div>
-				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
-						FastFood Ideas (Yummy)</a>
-					<div>
-					</div>
-				</div>
-			</div>
-			</div>
 		</div>
 	</div>
 
-	<div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 mt-16">
+	<section class="section-container">
 
 		<div class="border-b mb-5 flex justify-between text-sm">
-			<div class="text-indigo-600 flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase">
+			<div class="section_header">
 				<svg class="h-6 mr-3" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 455.005 455.005"
 								style="enable-background:new 0 0 455.005 455.005;" xml:space="preserve">
@@ -381,116 +346,94 @@ In the dynamic world of business and entrepreneurship, success is not just about
 									<path d="M53.527,192.864c-2.187,3.518-1.109,8.142,2.409,10.329l183.478,114.081c1.232,0.767,2.601,1.132,3.953,1.132 c2.506,0,4.956-1.256,6.376-3.541c2.187-3.518,1.109-8.142-2.409-10.329L63.856,190.455 C60.338,188.266,55.714,189.346,53.527,192.864z"> </path>
                 </g>
             </svg>
-				<a href="#" class="font-semibold inline-block">Local News</a>
+				<a href="#" class="section_header_text">Local News</a>
 			</div>
 			<a href="#">See All</a>
 		</div>
 
-
-		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+		<div class="card_container_2">
 
 			<!-- CARD 1 -->
-			<div class="rounded overflow-hidden shadow-lg flex flex-col">
-				<a href="#"></a>
+			<div class="card_item">
+				<a href="/post.html"></a>
 				<div class="relative"><a href="#">
-					<img class="w-full"
+					<img class="w-full image_animation"
 									src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
 									alt="Sunset in the mountains">
-					<div
-									class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-					</div>
 				</a>
-					<!-- 				<a href="#!"> -->
-					<!-- 					<div -->
-					<!-- 									class="text-xs absolute top-0 right-0 bg-indigo-600 px-4 py-2 text-white mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out"> -->
-					<!-- 						Cooking -->
-					<!-- 					</div> -->
-					<!-- 				</a> -->
 				</div>
 				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Simplest
+					<a href="/category.html"
+									class="tag">Tag</a>
+					<a href="/post.html"
+									class="title inline-block">Simplest
 						Salad Recipe ever</a>
-					<p class="text-gray-500 text-sm">
+					<p class="content">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					</p>
 				</div>
 
 			</div>
-
-
 
 			<!-- CARD 2 -->
-			<div class="rounded overflow-hidden shadow-lg flex flex-col">
-				<a href="#"></a>
+			<div class="card_item">
+				<a href="/post.html"></a>
 				<div class="relative"><a href="#">
-					<img class="w-full"
+					<img class="w-full image_animation"
 									src="https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
 									alt="Sunset in the mountains">
-					<div
-									class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-					</div>
 				</a>
 				</div>
 				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Best
+					<a href="/category.html"
+									class="tag">Tag</a>
+					<a href="/post.html"
+									class="title inline-block">Best
 						FastFood Ideas (Yummy)</a>
-					<p class="text-gray-500 text-sm">
+					<p class="content">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					</p>
 				</div>
 
 			</div>
 
-
 			<!-- CARD 3 -->
-			<div class="rounded overflow-hidden shadow-lg flex flex-col">
-				<a href="#"></a>
+			<div class="card_item">
+				<a href="/post.html"></a>
 				<div class="relative"><a href="#">
-					<img class="w-full"
+					<img class="w-full image_animation"
 									src="https://images.pexels.com/photos/6086/food-salad-healthy-vegetables.jpg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
 									alt="Sunset in the mountains">
-					<div
-									class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-					</div>
 				</a>
 				</div>
 				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
+					<a href="/category.html"
+									class="tag">Tag</a>
+					<a href="/post.html"
+									class="title inline-block">Why
 						to eat salad?</a>
-					<p class="text-gray-500 text-sm">
+					<p class="content">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					</p>
 				</div>
 			</div>
 
 			<!-- CARD 4 -->
-			<div class="rounded overflow-hidden shadow-lg flex flex-col">
-				<a href="#"></a>
+			<div class="card_item">
+				<a href="/post.html"></a>
 				<div class="relative"><a href="#">
-					<img class="w-full"
+					<img class="w-full image_animation"
 									src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=500"
 									alt="Sunset in the mountains">
-					<div
-									class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
-					</div>
 				</a>
 				</div>
 				<div class="flex flex-col py-4 mb-auto">
-					<a href="#"
-									class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
-					<a href="#"
-									class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
+					<a href="/category.html"
+									class="tag">Tag</a>
+					<a href="/post.html"
+									class="title inline-block">Why
 						to eat salad?</a>
-					<p class="text-gray-500 text-sm">
+					<p class="content">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 					</p>
 				</div>
@@ -498,82 +441,82 @@ In the dynamic world of business and entrepreneurship, success is not just about
 
 		</div>
 
-	</div>
+	</section>
 </section>
 <!-- END CONTENT -->
 
 <!-- FOOTER -->
-<footer class="w-full">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<footer class="footer-container">
+	<div class="footer-content">
 		<!--Grid-->
-		<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
-			<div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-				<a href="/"  class="flex justify-center inline-block lg:justify-start">
+		<div class="footer-grid-1">
+			<div class="footer-grid-item-1">
+				<a href="/"  class="logo-link">
 					<img src="/images/logo.png" title="logo" alt="logo" width="110" height="39">
 				</a>
 				<p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Otaku - Where voices unite, stories flourish, and community thrives through open dialogue and meaningful connections.</p>
-				<a href="javascript:;"  class="py-2.5 px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-indigo-700 lg:mx-0">
+				<a href="javascript:;"  class="contact-link">
 					Contact us
 				</a>
 			</div>
 			<!--End Col-->
-			<div class="lg:mx-auto text-left ">
+			<div class="col-container">
 				<h4 class="text-lg font-medium mb-7 uppercase">Company</h4>
-				<ul class="text-sm  transition-all duration-500">
-					<li class="mb-6"><a href="javascript:;"  class="text-gray-600 hover:text-gray-900">Home</a></li>
-					<li class="mb-6"><a href="javascript:;"  class=" text-gray-600 hover:text-gray-900">About us</a></li>
+				<ul class="text-sm transition-all duration-500">
+					<li class="mb-6"><a href="javascript:;"  class="col-list-item">Home</a></li>
+					<li class="mb-6"><a href="javascript:;"  class="col-list-item">About us</a></li>
 					<li class="mb-6"><a href="javascript:;"  class=" text-gray-600 hover:text-gray-900">Partner with Us</a></li>
-					<li><a href="javascript:;"  class=" text-gray-600 hover:text-gray-900">Careers</a></li>
+					<li><a href="javascript:;"  class="col-list-item">Careers</a></li>
 				</ul>
 			</div>
 			<!--End Col-->
-			<div class="lg:mx-auto text-left lg:col-span-2">
+			<div class="col-container lg:col-span-2">
 				<h4 class="text-lg font-medium mb-7 uppercase">Trending</h4>
 				<ul class="text-sm  transition-all duration-500">
 					<li class="mb-2 flex flex-col">
 						<a href="#"
-										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+										class="tag">Tag</a>
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why to eat salad?</a>
+										class="title">Why to eat salad?</a>
 					</li>
 					<li class="mb-2 flex flex-col">
 						<a href="#"
-										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+										class="tag">Tag</a>
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
+										class="title">Why
 							to eat salad?</a></li>
 					<li class="mb-2 flex flex-col">
 						<a href="#"
-										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+										class="tag">Tag</a>
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
+										class="title">Why
 							to eat salad?</a>
 					</li>
 
 					<li class="mb-2 flex flex-col">
 						<a href="#"
-										class="font-medium text-gray-500 text-sm inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1">Tag</a>
+										class="tag">Tag</a>
 						<a href="#"
-										class="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out inline-block mb-2">Why
+										class="content">Why
 							to eat salad?</a></li>
 				</ul>
 			</div>
 			<!--End Col-->
-			<div class="lg:mx-auto text-left">
+			<div class="col-container">
 				<h4 class="text-lg font-medium mb-7">CATEGORIES</h4>
 				<ul class="text-sm  transition-all duration-500">
 					<li class="mb-2"><a href="javascript:;"  class="text-gray-600 hover:text-indigo-600">Local News</a></li>
-					<li class="mb-2"><a href="javascript:;"  class=" text-gray-600 hover:text-indigo-600">Education</a></li>
-					<li class="mb-2"><a href="javascript:;"  class=" text-gray-600 hover:text-indigo-600">Celebrity</a></li>
-					<li class="mb-2"><a href="javascript:;"  class=" text-gray-600 hover:text-indigo-600">Food</a></li>
-					<li class="mb-2"><a href="javascript:;"  class=" text-gray-600 hover:text-indigo-600">Travel</a></li>
-					<li class="mb-2"><a href="javascript:;"  class=" text-gray-600 hover:text-indigo-600">Art</a></li>
-					<li class="mb-2"><a href="javascript:;"  class=" text-gray-600 hover:text-indigo-600">Innovation</a></li>
+					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Education</a></li>
+					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Celebrity</a></li>
+					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Food</a></li>
+					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Travel</a></li>
+					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Art</a></li>
+					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Innovation</a></li>
 				</ul>
 			</div>
 		</div>
 		<!--Grid-->
-		<div class="py-7 border-t border-gray-200">
+		<div class="footer-grid-2">
 			<div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
 				<span class="text-sm text-gray-500 ">©<a href="/">Otaku</a> 2024, All rights reserved.</span>
 				<div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
