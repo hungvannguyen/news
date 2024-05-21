@@ -294,7 +294,7 @@ section {
   @apply flex h-full justify-center items-center dark:bg-gray-800;
 }
 .newsletter-container .newsletter-content {
-  @apply flex p-6;
+  @apply flex p-12;
 }
 .newsletter-container .newsletter-content .newsletter-description {
   @apply flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2;
