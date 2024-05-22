@@ -1,23 +1,29 @@
-.profile-container {
-  @apply p-5 border rounded text-gray-500;
-}
+.profile{
+    &-container {
+        @apply p-5 border rounded text-gray-500;
+    }
 
-.profile-content {
-  @apply flex items-center;
+    &-content {
+        @apply flex items-center;
 
-  .profile-image {
+    }
+
+  &-image {
     @apply w-16 h-16 rounded-full mr-3;
   }
 
-  .profile-description {
+  &-description {
     @apply text-sm;
 
-    .profile-name {
-      @apply font-medium text-white leading-none hover:text-indigo-600 transition duration-500 ease-in-out;
-    }
-
-    .profile-text {
-      @apply mt-2 text-sm;
-    }
   }
+
+  &-name {
+    @apply font-medium text-white leading-none hover:text-indigo-600 transition duration-500 ease-in-out;
+  }
+
+  &-text {
+    @apply mt-2 text-sm;
+  }
+
 }
+

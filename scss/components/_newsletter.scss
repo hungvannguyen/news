@@ -1,39 +1,43 @@
-.newsletter-container {
-  @apply flex h-full justify-center items-center dark:bg-gray-800;
+.newsletter{
+  &-container{
+    @apply flex h-full justify-center items-center dark:bg-gray-800;
+  }
 
-  .newsletter-content {
+  &-content{
     @apply flex p-12;
+  }
 
-    .newsletter-description {
-      @apply flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2;
+  &-description{
+    @apply flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2;
+  }
 
-      .newsletter-title {
-        @apply mb-2 text-2xl font-bold text-gray-700 dark:text-gray-200;
-      }
+  &-title{
+    @apply mb-2 text-2xl font-bold text-gray-700 dark:text-gray-200;
+  }
 
-      .newsletter-text {
-        @apply text-gray-500 dark:text-gray-400;
-      }
-    }
+  &-text{
+    @apply text-gray-500 dark:text-gray-400;
+  }
 
-    .newsletter-form-container {
-      @apply w-full px-1 md:w-auto lg:w-1/2;
+  &-form-container{
+    @apply w-full px-1 md:w-auto lg:w-1/2;
+  }
 
-      .newsletter-form {
+    &-form{
         @apply block;
-
-        .input-container {
-          @apply flex flex-col sm:flex-row;
-
-          .email-input {
-            @apply flex-1 px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-800 dark:text-white dark:placeholder-gray-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500;
-          }
-
-          .submit-button {
-            @apply w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap dark:bg-gray-900;
-          }
-        }
-      }
     }
+}
+
+.input{
+  &-container{
+    @apply flex flex-col sm:flex-row;
+  }
+  &-email{
+    @apply flex-1 text-black px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300;
+  }
+
+  &-submit{
+    @apply w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap dark:bg-gray-900;
   }
 }
+

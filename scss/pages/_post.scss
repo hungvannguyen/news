@@ -13,16 +13,17 @@
     @apply font-bold text-2xl lg:text-6xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2 overflow-ellipsis;
   }
 
-  .author-info {
-    @apply text-gray-500 text-sm;
-
-    .author-link {
-      @apply text-indigo-600 hover:underline;
+  .author {
+    &-info{
+        @apply text-gray-500 text-sm;
     }
 
-    .date-text {
-      @apply text-indigo-600;
+    &-link{
+        @apply text-indigo-600 hover:underline;
     }
+  }
+  .date-text {
+    @apply text-indigo-600;
   }
 }
 
@@ -35,35 +36,37 @@
 .sidebar-container {
   @apply sticky top-0;
 
-  .toc-container {
-    @apply border-2 p-8;
+  .toc {
+    &-container {
+      @apply border-2 p-8;
+    }
 
-    .toc-title {
+    &-title {
       @apply font-bold text-2xl mb-2;
     }
 
-    .toc-list {
+    &-list {
       @apply space-y-2 list-decimal;
-
-      .toc-item {
-        @apply hover:text-indigo-600;
-
-        .toc-link {
-          @apply cursor-pointer;
-        }
-      }
-    }
-  }
-
-  .related-posts-container {
-    .related-posts-title {
-      @apply font-bold text-2xl mb-2 border-b-2 mt-6;
     }
 
-    .related-post {
-      @apply flex flex-col py-4 mb-auto;
+    &-item {
+      @apply hover:text-indigo-600;
+    }
 
+    &-link {
+      @apply cursor-pointer;
     }
   }
 }
+
+.related {
+  &-posts-title {
+    @apply font-bold text-2xl mb-2 border-b-2 mt-6;
+  }
+
+  &-post {
+    @apply flex flex-col py-4 mb-auto;
+  }
+}
+
 
