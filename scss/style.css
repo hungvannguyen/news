@@ -174,7 +174,7 @@ section {
   @apply flex items-center pb-2 pr-2 border-b-2 border-indigo-600 uppercase;
 }
 .section_header_text {
-  @apply font-bold inline-block text-xl leading-8;
+  @apply font-bold inline-block text-2xl leading-8;
 }
 .section_header_text_2 {
   @apply text-4xl font-bold text-center uppercase;
@@ -295,6 +295,10 @@ section {
   @apply w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap dark:bg-gray-900;
 }
 
+.categories-grid {
+  @apply flex flex-col gap-3 md:grid grid-cols-3;
+}
+
 .category-container {
   @apply flex justify-center gap-2 mt-6;
 }
@@ -306,9 +310,6 @@ section {
 }
 .category-item:hover {
   @apply text-indigo-600;
-}
-.category-grid {
-  @apply flex flex-col gap-3 md:grid grid-cols-3;
 }
 .category-card {
   @apply relative overflow-hidden transition-all duration-300;
@@ -326,31 +327,32 @@ section {
   @apply bg-opacity-60;
 }
 
-.post-head-container {
+.post-header-container {
   @apply grid grid-cols-1 lg:grid-cols-2 gap-2;
 }
-
-.flex-container {
-  @apply flex flex-col space-y-4;
+.post-body-container {
+  @apply flex flex-col md:flex-row mt-10 gap-2;
 }
-.flex-container .tag-link {
+.post-body-content {
+  @apply max-w-4xl;
+}
+.post-tag {
   @apply font-medium text-gray-500 text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1;
 }
-.flex-container .title-text {
+.post-title {
   @apply font-bold text-2xl lg:text-6xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2 overflow-ellipsis;
 }
-.flex-container .author-info {
+.post-author-info {
   @apply text-gray-500 text-sm;
 }
-.flex-container .author-link {
+.post-author-link {
   @apply text-indigo-600 hover:underline;
 }
-.flex-container .date-text {
+.post-publish-date {
   @apply text-indigo-600;
 }
-
-.image-container .full-width-image {
-  @apply w-full;
+.post-share {
+  @apply flex md:flex-col gap-2;
 }
 
 .sidebar-container {

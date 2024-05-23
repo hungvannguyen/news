@@ -127,20 +127,27 @@
 <section class="mt-16">
 	<div class="my_container mb-4 mx-auto">
 
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-			<div class="flex-col space-y-2 overflow-hidden">
-				<a href="/post.html">
-				<img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="1" class="image_animation h-auto"  data-scale-value="0.9">
-				</a>
-				<span class="tag">
-				<a href="/category.html">
-					Tag
-				</a>
-				</span>
-				<h2 class="title">
-				<a href="/post.html">Advances in Predicting and Monitoring Atmospheric Conditions.</a>
-				</h2>
-				<p class="content">In the dynamic world of business and entrepreneurship, success is not just about having a great idea or a solid business plan. It requires a combination of factors, including setting goals,...</p>
+		<section class="card_container">
+			<!-- CARD 1 -->
+			<div class="card_item">
+				<a href="/post.html"></a>
+				<div class="relative">
+					<a href="/post.html">
+						<img class="w-full hover:-translate-y-1 hover:scale-90 hover: duration-300"
+										src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500"
+										alt="Sunset in the mountains">
+					</a>
+				</div>
+				<div class="flex flex-col mb-auto">
+					<a href="/category.html"
+									class="tag">Tag</a>
+					<a href="/post.html"
+									class="title">Simplest
+						Salad Recipe ever</a>
+					<p class="content">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					</p>
+				</div>
 			</div>
 			<div>
 				<div x-data="{ tab: 'latest' }">
@@ -347,7 +354,7 @@
 				</div>
 
 			</div>
-		</div>
+		</section>
 
 	</div>
 </section>
@@ -698,13 +705,6 @@
 										class="title">Why
 							to eat salad?</a>
 					</li>
-
-					<li class="mb-2 flex flex-col">
-						<a href="#"
-										class="tag">Tag</a>
-						<a href="#"
-										class="content">Why
-							to eat salad?</a></li>
 				</ul>
 			</div>
 			<!--End Col-->

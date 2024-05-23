@@ -126,22 +126,22 @@
 
 <!-- CONTENT -->
 <section class="mt-6" x-data>
-	<div class="post-head-container">
-		<div class="flex-container">
-			<a href="#" class="tag-link">Tag</a>
-			<span class="title-text">Why to eat salad? Capturing the Majestic Power and Beauty of Nature’s Elements </span>
-			<span class="author-info">By <a href="#" class="author-link">John Doe</a> on
-      <span class="date-text">May 10, 2021</span></span>
+	<div class="post-header-container">
+		<div class="flex flex-col space-y-4">
+			<a href="#" class="post-tag">Tag</a>
+			<span class="post-title">Why to eat salad? Capturing the Majestic Power and Beauty of Nature’s Elements </span>
+			<span class="post-author-info">By <a href="#" class="post-author-link">John Doe</a> on
+      <span class="post-publish-date">May 10, 2021</span></span>
 		</div>
-		<div class="image-container">
-			<img class="full-width-image"
+		<div>
+			<img class="w-full"
 							src="https://images.pexels.com/photos/6086/food-salad-healthy-vegetables.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-							alt="Sunset in the mountains">
+							alt="Post Image">
 		</div>
 	</div>
 
-	<div class="flex flex-col md:flex-row mt-10 gap-2">
-		<div class="flex md:flex-col gap-2">
+	<div class="post-body-container">
+		<div class="post-share">
 			<span>Share</span>
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48" class="w-12 h-12">
 				<path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
@@ -159,7 +159,7 @@
 				<path fill="#212121" fill-rule="evenodd" d="M38,42H10c-2.209,0-4-1.791-4-4V10c0-2.209,1.791-4,4-4h28	c2.209,0,4,1.791,4,4v28C42,40.209,40.209,42,38,42z" clip-rule="evenodd"></path><path fill="#fff" d="M34.257,34h-6.437L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z"></path><polygon fill="#fff" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34"></polygon><polygon fill="#fff" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14"></polygon>
 			</svg>
 		</div>
-		<div class="max-w-4xl ">
+		<div class="post-body-content">
 			<div class="md:mx-10">
 		<p>
 In the dynamic world of business and entrepreneurship, success is not just about having a great idea or a solid business plan. It requires a combination of factors, including setting goals, cultivating the right mindset, and harnessing unwavering motivation. These elements form the cornerstone of achievement, empowering individuals to overcome challenges, adapt to changes, and ultimately thrive in the competitive landscape. In this blog post, we delve into the vital role of goals, mindset, and motivation and explore how they fuel success for aspiring entrepreneurs and established business professionals alike.
@@ -325,7 +325,6 @@ In the dynamic world of business and entrepreneurship, success is not just about
 					<!-- Repeat the "related-post" div for each related post -->
 				</div>
 			</div>
-
 		</div>
 	</div>
 
@@ -454,25 +453,25 @@ In the dynamic world of business and entrepreneurship, success is not just about
 				<a href="/"  class="logo-link">
 					<img src="/images/logo.png" title="logo" alt="logo" width="110" height="39">
 				</a>
-				<p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Otaku - Where voices unite, stories flourish, and community thrives through open dialogue and meaningful connections.</p>
+				<p class="description">Otaku - Where voices unite, stories flourish, and community thrives through open dialogue and meaningful connections.</p>
 				<a href="javascript:;"  class="contact-link">
 					Contact us
 				</a>
 			</div>
 			<!--End Col-->
 			<div class="col-container">
-				<h4 class="text-lg font-medium mb-7 uppercase">Company</h4>
-				<ul class="text-sm transition-all duration-500">
+				<h4 class="col-title">Company</h4>
+				<ul class="col-list">
 					<li class="mb-6"><a href="javascript:;"  class="col-list-item">Home</a></li>
 					<li class="mb-6"><a href="javascript:;"  class="col-list-item">About us</a></li>
-					<li class="mb-6"><a href="javascript:;"  class=" text-gray-600 hover:text-gray-900">Partner with Us</a></li>
-					<li><a href="javascript:;"  class="col-list-item">Careers</a></li>
+					<li class="mb-6"><a href="javascript:;"  class="col-list-item">Partner with Us</a></li>
+					<li class="mb-6"><a href="javascript:;"  class="col-list-item">Careers</a></li>
 				</ul>
 			</div>
 			<!--End Col-->
 			<div class="col-container lg:col-span-2">
-				<h4 class="text-lg font-medium mb-7 uppercase">Trending</h4>
-				<ul class="text-sm  transition-all duration-500">
+				<h4 class="col-title">Trending</h4>
+				<ul class="col-list">
 					<li class="mb-2 flex flex-col">
 						<a href="#"
 										class="tag">Tag</a>
@@ -492,20 +491,13 @@ In the dynamic world of business and entrepreneurship, success is not just about
 										class="title">Why
 							to eat salad?</a>
 					</li>
-
-					<li class="mb-2 flex flex-col">
-						<a href="#"
-										class="tag">Tag</a>
-						<a href="#"
-										class="content">Why
-							to eat salad?</a></li>
 				</ul>
 			</div>
 			<!--End Col-->
 			<div class="col-container">
-				<h4 class="text-lg font-medium mb-7">CATEGORIES</h4>
-				<ul class="text-sm  transition-all duration-500">
-					<li class="mb-2"><a href="javascript:;"  class="text-gray-600 hover:text-indigo-600">Local News</a></li>
+				<h4 class="col-title">CATEGORIES</h4>
+				<ul class="col-list">
+					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Local News</a></li>
 					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Education</a></li>
 					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Celebrity</a></li>
 					<li class="mb-2"><a href="javascript:;"  class="col-list-item">Food</a></li>

@@ -1,3 +1,6 @@
+.categories-grid{
+  @apply flex flex-col gap-3 md:grid grid-cols-3;
+}
 .category {
   &-container {
     @apply flex justify-center gap-2 mt-6;
@@ -9,18 +12,15 @@
 
   &-item {
     @apply uppercase border px-2 py-1 rounded-full font-bold cursor-pointer transition-all duration-500;
+
     &:hover {
       @apply text-indigo-600;
     }
   }
 
-  &-grid {
-    @apply flex flex-col gap-3 md:grid grid-cols-3;
-
-  }
-
   &-card {
     @apply relative overflow-hidden transition-all duration-300;
+
     &:hover {
       @apply -translate-y-1 scale-90;
     }
@@ -33,6 +33,7 @@
 
   &-label {
     @apply absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-center text-white font-medium cursor-pointer transition-all duration-300;
+
     &:hover {
       @apply bg-opacity-60;
     }
