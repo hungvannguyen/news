@@ -367,6 +367,9 @@ section {
 .post-header-container {
   @apply grid grid-cols-1 lg:grid-cols-2 gap-2;
 }
+.post-header-container div {
+  @apply flex flex-col space-y-4;
+}
 .post-body-container {
   @apply flex flex-col md:flex-row mt-10 gap-2;
 }
