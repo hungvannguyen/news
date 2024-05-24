@@ -1,0 +1,15 @@
+.text-primary {
+  @apply text-white;
+}
+
+.text-secondary {
+  @apply text-gray-500;
+}
+
+.text-third {
+  @apply text-indigo-600;
+}
+
+.hover-primary {
+    @apply text-indigo-600;
+}

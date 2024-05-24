@@ -13,22 +13,30 @@
     }
   }
   &-tag{
-    @apply font-medium text-gray-500 text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1;
+    @apply font-medium text-secondary text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1;
   }
   &-title{
-    @apply font-bold text-2xl lg:text-6xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2 overflow-ellipsis;
+    @apply font-bold text-2xl lg:text-6xl inline-block transition duration-500 ease-in-out mb-2 overflow-ellipsis;
+
+    &:hover {
+      @apply hover-primary;
+    }
   }
   &-author {
     &-info{
-      @apply text-gray-500 text-sm;
+      @apply text-secondary text-sm;
     }
 
     &-link{
-      @apply text-indigo-600 hover:underline;
+      @apply text-third;
+
+      &:hover {
+        @apply underline;
+      }
     }
   }
   &-publish-date {
-    @apply text-indigo-600;
+    @apply text-third;
   }
 
     &-share{
@@ -53,7 +61,9 @@
     }
 
     &-item {
-      @apply hover:text-indigo-600;
+      &:hover{
+        @apply hover-primary;
+      }
     }
 
     &-link {
@@ -64,7 +74,7 @@
 
 .related {
   &-posts-title {
-    @apply font-bold text-2xl mb-2 border-b-2 mt-6;
+    @apply text-primary font-bold text-2xl mb-2 border-b-2 mt-6;
   }
 
   &-post {

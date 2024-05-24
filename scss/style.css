@@ -53,6 +53,22 @@ input {
   @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2;
 }
 
+.text-primary {
+  @apply text-white;
+}
+
+.text-secondary {
+  @apply text-gray-500;
+}
+
+.text-third {
+  @apply text-indigo-600;
+}
+
+.hover-primary {
+  @apply text-indigo-600;
+}
+
 .image_animation {
   @apply transition-all duration-150 ease-in-out;
 }
@@ -133,21 +149,21 @@ input {
 }
 
 .tag {
-  @apply font-medium text-gray-500 text-xs leading-4 transition-all duration-500 my-auto;
+  @apply font-medium text-secondary text-xs leading-4 transition-all duration-500 my-auto;
 }
 .tag:hover {
-  @apply text-indigo-600;
+  @apply hover-primary;
 }
 
 .title {
-  @apply font-medium text-base leading-7 transition-all duration-500 mb-2;
+  @apply font-medium text-primary text-base leading-7 transition-all duration-500 mb-2;
 }
 .title:hover {
-  @apply text-indigo-600;
+  @apply hover-primary;
 }
 
 .content {
-  @apply text-gray-500 text-sm leading-5;
+  @apply text-secondary text-sm leading-5;
 }
 
 .card_container {
@@ -202,13 +218,13 @@ section {
   @apply flex flex-row flex-nowrap justify-between items-center md:justify-center;
 }
 .pagination-button {
-  @apply flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-300 bg-white text-gray-800;
+  @apply flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-300 bg-white text-secondary;
 }
 .pagination-button:hover {
   @apply border-gray-400;
 }
 .pagination-page {
-  @apply font-bold hidden w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-300 bg-white text-gray-800 sm:flex;
+  @apply font-bold hidden w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-300 bg-white text-secondary sm:flex;
 }
 .pagination-page:hover {
   @apply border-gray-400;
@@ -218,7 +234,7 @@ section {
 }
 
 .current-page {
-  @apply font-bold border-gray-800 bg-gray-800 text-white cursor-not-allowed;
+  @apply font-bold border-gray-800 bg-gray-800 text-primary cursor-not-allowed;
 }
 
 .footer-container {
@@ -240,7 +256,7 @@ section {
   @apply flex justify-center lg:justify-start;
 }
 .footer-grid-item-1 .description {
-  @apply py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left;
+  @apply py-8 text-sm text-secondary lg:max-w-xs text-center lg:text-left;
 }
 .footer-grid-item-1 .contact-link {
   @apply py-2.5 px-5 h-9 block w-fit bg-indigo-600 rounded-full shadow-sm text-xs text-white mx-auto transition-all duration-500 hover:bg-indigo-700 lg:mx-0;
@@ -250,17 +266,20 @@ section {
   @apply lg:mx-auto text-left;
 }
 .col-title {
-  @apply text-lg font-medium mb-7 uppercase;
+  @apply text-primary text-lg font-medium mb-7 uppercase;
 }
 .col-list {
-  @apply text-sm  transition-all duration-500;
+  @apply text-secondary text-sm transition-all duration-500;
 }
 .col-list-item {
-  @apply text-gray-600 hover:text-indigo-600;
+  @apply text-gray-600;
+}
+.col-list-item:hover {
+  @apply hover-primary;
 }
 
 .profile-container {
-  @apply p-5 border rounded text-gray-500;
+  @apply p-5 border rounded text-secondary;
 }
 .profile-content {
   @apply flex items-center;
@@ -272,29 +291,32 @@ section {
   @apply text-sm;
 }
 .profile-name {
-  @apply font-medium text-white leading-none hover:text-indigo-600 transition duration-500 ease-in-out;
+  @apply font-medium text-primary leading-none transition duration-500 ease-in-out;
+}
+.profile-name:hover {
+  @apply hover-primary;
 }
 .profile-text {
   @apply mt-2 text-sm;
 }
 
 .newsletter-container {
-  @apply flex h-full justify-center items-center dark:bg-gray-800;
+  @apply my_container flex h-full justify-center items-center border;
 }
 .newsletter-content {
-  @apply flex p-12;
+  @apply flex py-12;
 }
 .newsletter-description {
   @apply flex-1 w-full mb-5 md:mb-0 md:pr-5 lg:pr-10 md:w-1/2;
 }
 .newsletter-title {
-  @apply mb-2 text-2xl font-bold text-gray-700 dark:text-gray-200;
+  @apply text-secondary mb-2 text-2xl font-bold text-gray-700;
 }
 .newsletter-text {
-  @apply text-gray-500 dark:text-gray-400;
+  @apply text-primary;
 }
 .newsletter-form-container {
-  @apply w-full px-1 md:w-auto lg:w-1/2;
+  @apply w-full md:w-auto lg:w-1/2;
 }
 .newsletter-form {
   @apply block;
@@ -304,10 +326,10 @@ section {
   @apply flex flex-col sm:flex-row;
 }
 .input-email {
-  @apply flex-1 text-black px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300;
+  @apply flex-1 text-secondary px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md sm:mr-5 focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300;
 }
 .input-submit {
-  @apply w-full px-6 py-4 mt-5 text-white text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap dark:bg-gray-900;
+  @apply w-full px-6 py-4 mt-5 text-primary text-lg bg-gray-900 rounded-md sm:mt-0 sm:w-auto whitespace-nowrap;
 }
 
 .categories-grid {
@@ -324,7 +346,7 @@ section {
   @apply uppercase border px-2 py-1 rounded-full font-bold cursor-pointer transition-all duration-500;
 }
 .category-item:hover {
-  @apply text-indigo-600;
+  @apply hover-primary;
 }
 .category-card {
   @apply relative overflow-hidden transition-all duration-300;
@@ -336,7 +358,7 @@ section {
   @apply w-full max-h-[300px] object-cover;
 }
 .category-label {
-  @apply absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-center text-white font-medium cursor-pointer transition-all duration-300;
+  @apply absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-center text-primary font-medium cursor-pointer transition-all duration-300;
 }
 .category-label:hover {
   @apply bg-opacity-60;
@@ -352,19 +374,25 @@ section {
   @apply max-w-4xl;
 }
 .post-tag {
-  @apply font-medium text-gray-500 text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1;
+  @apply font-medium text-secondary text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out my-1;
 }
 .post-title {
-  @apply font-bold text-2xl lg:text-6xl inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2 overflow-ellipsis;
+  @apply font-bold text-2xl lg:text-6xl inline-block transition duration-500 ease-in-out mb-2 overflow-ellipsis;
+}
+.post-title:hover {
+  @apply hover-primary;
 }
 .post-author-info {
-  @apply text-gray-500 text-sm;
+  @apply text-secondary text-sm;
 }
 .post-author-link {
-  @apply text-indigo-600 hover:underline;
+  @apply text-third;
+}
+.post-author-link:hover {
+  @apply underline;
 }
 .post-publish-date {
-  @apply text-indigo-600;
+  @apply text-third;
 }
 .post-share {
   @apply flex md:flex-col gap-2;
@@ -382,15 +410,15 @@ section {
 .sidebar-container .toc-list {
   @apply space-y-2 list-decimal;
 }
-.sidebar-container .toc-item {
-  @apply hover:text-indigo-600;
+.sidebar-container .toc-item:hover {
+  @apply hover-primary;
 }
 .sidebar-container .toc-link {
   @apply cursor-pointer;
 }
 
 .related-posts-title {
-  @apply font-bold text-2xl mb-2 border-b-2 mt-6;
+  @apply text-primary font-bold text-2xl mb-2 border-b-2 mt-6;
 }
 .related-post {
   @apply flex flex-col py-4 mb-auto;

@@ -8,14 +8,14 @@
   }
 
   &-button {
-    @apply flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-300 bg-white text-gray-800;
+    @apply flex w-10 h-10 mr-1 justify-center items-center rounded-full border border-gray-300 bg-white text-secondary;
     &:hover {
       @apply border-gray-400;
     }
   }
 
   &-page {
-    @apply font-bold hidden w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-300 bg-white text-gray-800 sm:flex;
+    @apply font-bold hidden w-10 h-10 mx-1 justify-center items-center rounded-full border border-gray-300 bg-white text-secondary sm:flex;
     &:hover {
       @apply border-gray-400;
     }
@@ -28,6 +28,6 @@
 }
 
 .current-page {
-  @apply font-bold border-gray-800 bg-gray-800 text-white cursor-not-allowed;
+  @apply font-bold border-gray-800 bg-gray-800 text-primary cursor-not-allowed;
 }
 

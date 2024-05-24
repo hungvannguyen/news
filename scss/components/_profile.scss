@@ -1,6 +1,6 @@
 .profile{
     &-container {
-        @apply p-5 border rounded text-gray-500;
+        @apply p-5 border rounded text-secondary;
     }
 
     &-content {
@@ -18,7 +18,11 @@
   }
 
   &-name {
-    @apply font-medium text-white leading-none hover:text-indigo-600 transition duration-500 ease-in-out;
+    @apply font-medium text-primary leading-none transition duration-500 ease-in-out;
+
+    &:hover {
+      @apply hover-primary;
+    }
   }
 
   &-text {

@@ -26,7 +26,7 @@
       }
 
       .description {
-        @apply py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left;
+        @apply py-8 text-sm text-secondary lg:max-w-xs text-center lg:text-left;
       }
 
       .contact-link {
@@ -40,13 +40,16 @@
     @apply lg:mx-auto text-left
   }
   &-title{
-    @apply text-lg font-medium mb-7 uppercase
+    @apply text-primary text-lg font-medium mb-7 uppercase
   }
     &-list{
-        @apply text-sm  transition-all duration-500
+        @apply text-secondary text-sm transition-all duration-500
     }
     &-list-item{
-        @apply text-gray-600 hover:text-indigo-600
+        @apply text-gray-600;
+        &:hover {
+          @apply hover-primary;
+        }
     }
 }
 

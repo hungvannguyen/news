@@ -1,19 +1,19 @@
 .tag {
-  @apply font-medium text-gray-500 text-xs leading-4 transition-all duration-500 my-auto;
+  @apply font-medium text-secondary text-xs leading-4 transition-all duration-500 my-auto;
   &:hover {
-    @apply text-indigo-600;
+    @apply hover-primary;
   }
 }
 
 .title {
-  @apply font-medium text-base leading-7 transition-all duration-500 mb-2;
+  @apply font-medium text-primary text-base leading-7 transition-all duration-500 mb-2;
   &:hover {
-    @apply text-indigo-600;
+    @apply hover-primary;
   }
 }
 
 .content {
-  @apply text-gray-500 text-sm leading-5;
+  @apply text-secondary text-sm leading-5;
 }
 
 .card{
